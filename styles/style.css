@@ -1,1 +1,340 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Atari-Smooth';
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@font-face {
+  font-family: 'Atari-Smooth';
+  src: url("../fonts/AtariClassicExtrasmooth-LxZy.ttf");
+}
+
+body {
+  background: url("../images/background.jpg") fixed;
+}
+
+nav {
+  width: 100%;
+  height: 15vh;
+  background-color: #7030A0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  z-index: 2;
+}
+
+nav div {
+  width: 30%;
+}
+
+nav div input {
+  border: none;
+  height: 40px;
+  border-radius: 25px;
+  width: 100%;
+  color: white;
+  background: #2E2E48 url(../images/search.png) no-repeat scroll 12px 12px;
+  text-align: center;
+}
+
+nav div input:hover {
+  border: white 2px solid;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+nav div img {
+  height: 100px;
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+nav div a {
+  color: white;
+  width: 130px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #8969F1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+nav div a:nth-child(2) {
+  background-color: #2E2E48;
+  color: white;
+  margin-left: 30px;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #8969F1;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  text-align: center;
+}
+
+header #games {
+  height: 100%;
+  width: 100%;
+  display: none;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+header #games div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+header #games div p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 25px;
+  height: 170px;
+  width: 400px;
+  cursor: pointer;
+  z-index: 1;
+}
+
+header img {
+  cursor: pointer;
+}
+
+header #arrowsup {
+  display: none;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+#leagueoflegends {
+  background: url(../images/lol.jpg);
+}
+
+#csgo {
+  background: url(../images/csgo.jpg) center;
+}
+
+#rainbow {
+  background: url(../images/rainbow.jpg) center;
+}
+
+#apexlegends {
+  background: url(../images/apexlegends.jpg) center;
+}
+
+#valorant {
+  background: url(../images/valorant.jpg) center;
+}
+
+#fortnite {
+  background: url(../images/fortnite.jpg) center;
+}
+
+#minecraft {
+  background: url(../images/minecraft.jpg) center;
+}
+
+#gta {
+  background: url(../images/gta.jpg) center;
+}
+
+#animalcrossing {
+  background: url(../images/animalcrossing.jpg) center;
+}
+
+#supersmash {
+  background: url(../images/supersmash.jpg) center;
+}
+
+#gmod {
+  background: url(../images/gmod.jpg) center;
+}
+
+#seaofthieves {
+  background: url(../images/seaofthieves.jpg) center;
+}
+
+main {
+  margin-top: 70px;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+main div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .user_container {
+  width: 80%;
+  height: 80%;
+  border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .user_container img {
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 100%;
+}
+
+main .user_info {
+  background-color: #7030A0;
+  width: 100%;
+  height: 500px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .user_games {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  width: 100%;
+}
+
+main .user_game {
+  background-color: #2E2E48;
+  max-width: 250px;
+  height: 20px;
+  font-size: 0.8em;
+  padding: 10px;
+  border-radius: 25px;
+  text-align: center;
+  margin: 5px;
+}
+
+main .user_socials {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+main .user_socials p {
+  display: none;
+}
+
+main .user_socials img {
+  width: 60px;
+  cursor: pointer;
+}
+/*# sourceMappingURL=style.css.map */

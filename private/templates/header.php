@@ -12,6 +12,36 @@
     <title>Covid</title>
 </head>
 <body>
-<header>
-    
+
+<nav>
+    <div>
+    <input type="text" placeholder="Zoeken...">
+    </div>
+    <div>
+    <img src="images/placeholder.jpg" alt="">
+    </div>
+    <div class="nav-buttons">
+        <a href="">Aanmelden</a>
+        <a href="">Login</a>
+    </div>
+</nav>
+
+<header id="dropdown">
+
+<div id="games">
+<div id="exit" class="exit"><p id="leagueoflegends">League of Legends</p></div>
+<div class="exit"><p id="csgo">Counter strike: Global offensive</p></div>
+<div class="exit"><p id="rainbow">Tom Clancy's Rainbow <br> Six Siege</p></div>
+<div class="exit"><p id="apexlegends">Apex Legends</p></div>
+<div class="exit"><p id="valorant">Valorant</p></div>
+<div class="exit"><p id="fortnite">Fortnite</p></div>
+<div class="exit"><p id="minecraft">Minecraft</p></div>
+<div class="exit"><p id="gta">GTA V</p></div>
+<div class="exit"><p id="animalcrossing">Animal crossing</p></div>
+<div class="exit"><p id="supersmash">Super Smash Ultimate</p></div>
+<div class="exit"><p id="gmod">Garry's Mod</p></div>
+<div class="exit"><p id="seaofthieves">Sea of thieves</p></div>
+</div>
+
+<img id="arrowsdown" src="images/arrowsdown.png" alt="arrows-down-icon">
 </header>
