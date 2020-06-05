@@ -1,7 +1,7 @@
 <?php
 function dbConnect() {
 try {
-    require 'config2.php';
+    require 'config.php';
     $dsn = "mysql:host=" . $config['db_host'] . ';dbname=' . $config['db_name'];
     $pdo = new PDO($dsn, $config['db_user'], $config['db_pass']);
  
