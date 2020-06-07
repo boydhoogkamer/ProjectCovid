@@ -24,5 +24,8 @@ switch ( $_GET['page'] ) {
     case 'createaccount':
         createaccount();
         break;
+    case 'test':
+        test();
+        break;
         
 }

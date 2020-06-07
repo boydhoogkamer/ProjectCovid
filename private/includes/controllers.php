@@ -9,6 +9,14 @@ function home() {
     include $view;
 }
 
+function test() {
+
+    global $CONFIG;
+
+    $view = $CONFIG['view_path'] . '/test.php';
+
+    include $view;
+}
 
 function checkpassword() {
     if (isset($_POST['username'] , $_POST['password'])) {

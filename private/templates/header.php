@@ -15,7 +15,8 @@
 
 <nav>
     <div>
-    <input type="text" placeholder="Zoeken...">
+    <input type="text" id="invoer" list="lijst" placeholder="Zoek naar games...">
+    <datalist id="lijst"></datalist>
     </div>
     <div>
     <img src="images/placeholder.jpg" alt="">

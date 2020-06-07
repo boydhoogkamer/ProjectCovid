@@ -9,6 +9,24 @@ function get_posts() {
     return $statement;
 }
 
+function get_user() {
+    $pdo = dbConnect();
+    $query = 'SELECT user_name FROM `users`';
+    $statement = $pdo->query( $query );
+    $result = mysqli_query($pdo, $query);
+    return $statement;
+
+    $datas = array();
+    if (mysqli_num_rows($result) > 0) {
+        while($row = mysqli_fetch_assoc($result)){
+        $datas[] = $row;
+        }
+    }
+
+    print_r($datas);
+
+};
+
 function isLoggedIn() {
     global $_SESSION;
 
