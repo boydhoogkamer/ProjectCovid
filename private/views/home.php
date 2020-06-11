@@ -8,7 +8,7 @@
 foreach ($posts as $post):
 ?>
 
-<div>
+<div class="user_containers">
 <div class='user_container'>
 <img src="images/uploaded_images/<?php echo $post['user_img'];?>" alt="User Image">
 <div class='user_info'>
@@ -33,11 +33,7 @@ foreach ($posts as $post):
 endforeach;
 ?>
 
-
-
-
 </main>
-
 
 
 <?php require __DIR__ . "/../templates/footer.php"; ?>

@@ -86,7 +86,7 @@ nav div {
           flex-direction: row;
 }
 
-nav div a {
+nav div button {
   color: white;
   width: 130px;
   height: 40px;
@@ -103,9 +103,11 @@ nav div a {
           align-items: center;
   text-decoration: none;
   font-size: 0.8em;
+  cursor: pointer;
+  border: none;
 }
 
-nav div a:nth-child(2) {
+nav div button:nth-child(2) {
   background-color: #2E2E48;
   color: white;
   margin-left: 30px;
@@ -234,7 +236,6 @@ header #games div p {
 }
 
 main {
-  margin-top: 70px;
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -338,5 +339,79 @@ main .user_socials p {
 main .user_socials img {
   width: 60px;
   cursor: pointer;
+}
+
+.filter {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.filter .register-div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35%;
+  height: 80%;
+  overflow-y: scroll;
+  background-color: #474664;
+  border-radius: 10px;
+}
+
+.filter .register-div img {
+  width: 150px;
+  margin-top: 50px;
+}
+
+.register-form {
+  margin-top: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.register-form input {
+  margin-top: 20px;
+  height: 30px;
+  padding: 5px;
+  background-color: #2E2E48;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+.register-form label {
+  margin-top: 30px;
+}
+
+.register-form select {
+  margin-top: 10px;
+  background-color: #2E2E48;
+  border: none;
+  color: #adadad;
+}
+
+.submitbutton {
+  margin-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */

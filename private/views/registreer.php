@@ -1,5 +1,3 @@
-<div id="register" class="register">
-    <div class="register-form__box">
         <form class="register-form" id="register-form" action="index.php?page=createaccount" method="post" enctype="multipart/form-data">
 
               <input name="registreernaam" type="text" placeholder="Naam" id="name" />
@@ -26,8 +24,8 @@
 
               <label>Kies een spel:</label>
               <select name="registreergame2">
-              <option value="League of Legends">League of Legends</option>
               <option value="Counter Strike: Global Offensive">Counter Strike: Global Offensive</option>
+              <option value="League of Legends">League of Legends</option>
               <option value="Tom Clancy's Rainbow Six® Siege">Tom Clancy's Rainbow Six® Siege</option>
               <option value="Apex Legends">Apex Legends</option>
               <option value="Valorant">Valorant</option>
@@ -42,10 +40,10 @@
 
               <label>Kies een spel:</label>
               <select name="registreergame3">
+              <option value="Apex Legends">Apex Legends</option>
               <option value="League of Legends">League of Legends</option>
               <option value="Counter Strike: Global Offensive">Counter Strike: Global Offensive</option>
               <option value="Tom Clancy's Rainbow Six® Siege">Tom Clancy's Rainbow Six® Siege</option>
-              <option value="Apex Legends">Apex Legends</option>
               <option value="Valorant">Valorant</option>
               <option value="Fortnite">Fortnite</option>
               <option value="Minecraft">Minecraft</option>
@@ -66,5 +64,3 @@
               <input class="submitbutton" name="registreersubmit" type="submit" value="Creëer account" id="button-black"/>
 
           </form>
-        </div>
-</div>

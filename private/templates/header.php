@@ -8,10 +8,17 @@
     <meta name="keywords" content="Game Games Gaming Communicatie">
     <meta name="description" content="Communicatie website om gamers (virtueel) bij elkaar te brengen">
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="shortcut icon" type="image/x-icon" href="" />
+    <link rel="shortcut icon" type="image/x-icon" href=""/>
     <title>Covid</title>
 </head>
 <body>
+
+<div id='register' class="filter">
+<div class='register-div'>
+<img src="images/placeholder.jpg" alt="">
+<?php require __DIR__ . "/../views/registreer.php"; ?>
+</div>
+</div>
 
 <nav id='nav'>
     <div>
@@ -22,8 +29,8 @@
     <img id='logo' src="images/placeholder.jpg" alt="">
     </div>
     <div class="nav-buttons">
-        <a href="">Aanmelden</a>
-        <a href="">Login</a>
+        <button onclick="openRegister()">Aanmelden</button>
+        <button >Login</button>
     </div>
 </nav>
 
