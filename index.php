@@ -27,5 +27,8 @@ switch ( $_GET['page'] ) {
     case 'test':
         test();
         break;
-        
+    case 'jsondata':
+        jsondata();
+        break;
+    
 }

@@ -12,18 +12,12 @@ function get_posts() {
 function get_user() {
     $pdo = dbConnect();
     $query = 'SELECT user_name FROM `users`';
-    $statement = $pdo->query( $query );
-    $result = mysqli_query($pdo, $query);
-    return $statement;
+    $statement = $pdo->prepare( $query );
+    $statement->execute();
+    
+    $user_data = $statement->fetchAll();
 
-    $datas = array();
-    if (mysqli_num_rows($result) > 0) {
-        while($row = mysqli_fetch_assoc($result)){
-        $datas[] = $row;
-        }
-    }
-
-    print_r($datas);
+    return json_encode(array_values($user_data));
 
 };
 

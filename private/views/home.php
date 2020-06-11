@@ -1,8 +1,6 @@
  <?php require __DIR__ . "/../templates/header.php"; ?>
 
 
-
-
 <main>
 
 
@@ -27,7 +25,6 @@ foreach ($posts as $post):
 <p id="user_discord"><?php echo $post['user_discord'];?></p>
 <a href="<?php echo $post['user_steam'];?>"><img src="images/steamicon.png" alt="Steam"></a>
 </div>
-
 </div>
 </div>
 </div>

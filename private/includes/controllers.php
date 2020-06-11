@@ -18,6 +18,14 @@ function test() {
     include $view;
 }
 
+function jsondata() {
+
+    $user_info = get_user();
+
+    echo $user_info;
+    
+}
+
 function checkpassword() {
     if (isset($_POST['username'] , $_POST['password'])) {
         $username = $_POST['username'];

@@ -13,13 +13,13 @@
 </head>
 <body>
 
-<nav>
+<nav id='nav'>
     <div>
-    <input type="text" id="invoer" list="lijst" placeholder="Zoek naar games...">
+    <input type="text" id="invoer" list="lijst" placeholder="Zoeken naar users...">
     <datalist id="lijst"></datalist>
     </div>
     <div>
-    <img src="images/placeholder.jpg" alt="">
+    <img id='logo' src="images/placeholder.jpg" alt="">
     </div>
     <div class="nav-buttons">
         <a href="">Aanmelden</a>
@@ -28,6 +28,8 @@
 </nav>
 
 <header id="dropdown">
+
+
 
 <div id="games">
 <div id="exit" class="exit"><p id="leagueoflegends">League of Legends</p></div>
@@ -44,5 +46,9 @@
 <div class="exit"><p id="seaofthieves">Sea of thieves</p></div>
 </div>
 
-<img id="arrowsdown" src="images/arrowsdown.png" alt="arrows-down-icon">
+
+<label>
+<input type="checkbox" id="checkbox" onclick="dropdown()">
+<img id="checkmark" src="images/arrowsdown.png" alt="arrows-down">
+</label>
 </header>

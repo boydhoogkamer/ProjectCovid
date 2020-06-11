@@ -3,17 +3,18 @@ header
     height: 70px
     background-color: #8969F1
     z-index: 1
-    display: flex
-    flex-direction: column
-    justify-content: center
-    align-items: center
     color: white
     text-align: center
+    label
+        margin-right: 28px
     #games
-        height: 100%
+        position: fixed
+        height: 85vh
+        margin-top: 15vh
         width: 100%
         display: none
         grid-template-columns: 1fr 1fr 1fr
+        background-color: #8969F1
         div
             display: flex
             justify-content: center
@@ -30,11 +31,22 @@ header
                 width: 400px
                 cursor: pointer
                 z-index: 1
-    img
-        cursor: pointer
-    #arrowsup
-        display: none
-        transform: rotate(180deg)
+
+#checkbox
+    position: absolute
+    opacity: 0
+    cursor: pointer
+    height: 0
+    width: 0
+    z-index: 2
+    margin-top: 15px
+
+#checkmark
+    position: absolute
+    cursor: pointer
+    z-index: 2
+    width: 30px
+    margin-top: 15px
 
 
 
