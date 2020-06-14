@@ -3,5 +3,6 @@
 <script src="scripts/main.js"></script>
 <script src="scripts/search.js"></script>
 <script src="scripts/register.js"></script>
+<script src="scripts/login.js"></script>
 </body>
 </html>

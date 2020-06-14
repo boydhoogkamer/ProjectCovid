@@ -23,7 +23,7 @@ foreach ($posts as $post):
 <div class='user_socials'>
 <img id="discord" src="images/discordicon.png" alt="Discord">
 <p id="user_discord"><?php echo $post['user_discord'];?></p>
-<a href="<?php echo $post['user_steam'];?>"><img src="images/steamicon.png" alt="Steam"></a>
+<a target='blank' href="<?php echo $post['user_steam'];?>"><img src="images/steamicon.png" alt="Steam"></a>
 </div>
 </div>
 </div>

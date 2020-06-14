@@ -15,10 +15,21 @@
 
 <div id='register' class="filter">
 <div class='register-div'>
-<img src="images/placeholder.jpg" alt="">
+<img id='register-exit' src="images/cross.png" alt="Go back">
+<img src="images/gamesquads_logo.png" alt="Logo">
 <?php require __DIR__ . "/../views/registreer.php"; ?>
 </div>
 </div>
+
+<div id='login' class="filter">
+<div class='login-div'>
+<img id='login-exit' src="images/cross.png" alt="Go back">
+<img src="images/gamesquads_logo.png" alt="Logo">
+<?php require __DIR__ . "/../views/login.php"; ?>
+</div>
+</div>
+
+
 
 <nav id='nav'>
     <div>
@@ -26,11 +37,11 @@
     <datalist id="lijst"></datalist>
     </div>
     <div>
-    <img id='logo' src="images/placeholder.jpg" alt="">
+    <img id='logo' src="images/gamesquads_logo.png" alt="">
     </div>
     <div class="nav-buttons">
         <button onclick="openRegister()">Aanmelden</button>
-        <button >Login</button>
+        <button onclick="openLogin()">Login</button>
     </div>
 </nav>
 

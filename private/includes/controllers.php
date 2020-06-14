@@ -9,15 +9,6 @@ function home() {
     include $view;
 }
 
-function test() {
-
-    global $CONFIG;
-
-    $view = $CONFIG['view_path'] . '/test.php';
-
-    include $view;
-}
-
 function jsondata() {
 
     $user_info = get_user();
@@ -34,6 +25,7 @@ function checkpassword() {
     if (empty($username) or empty($password)) {
             $error = 'Elk veld moet ingevuld worden!';
             header('Location: index.php?page=login'); 
+            echo 'Je bent niet ingelogd';
         } else {
             $pdo = dbConnect();
             $query = $pdo->prepare("SELECT * FROM users WHERE user_name = ? AND user_password = ?");
@@ -46,13 +38,15 @@ function checkpassword() {
                 session_start();
                 $_SESSION['logged_in'] = true;
                 header('Location: index.php?page=home');
+                echo 'Je bent ingelogd';
 
             } else {
                 session_destroy();
             $_SESSION['logged_in'] = false;
             $error = 'Incorrect gebruikersnaam of wachtwoord!';
-            header('Location: index.php?page=login');
-            }   
+            header('Location: index.php?page=home');
+            echo 'Je bent niet ingelogd';
+            }
         }
     }
 }
